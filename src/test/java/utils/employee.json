@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "employee detail",
+  "type": "array",
+  "items": {
+    "title": "Product",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The unique identifier for a product",
+        "type": "number"
+      },
+      "employee_name": {
+        "type": "string"
+      },
+      "employee_salary": {
+        "type": "number"
+      },
+      "employee_age": {
+        "type": "number"
+      },
+      "profile_image": {
+        "type": "object",
+        "required": [
+          "id",
+          "employee_name"
+        ]
+      }
+    }
+  }
+}
